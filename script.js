@@ -14,7 +14,7 @@ function call(){
 
 function r1(){
 
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+ randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
 var randomPng = "images/" + "dice" + randomNumber1 + ".png";
 
@@ -27,7 +27,7 @@ image1.setAttribute("src", randomPng);
 
 function r2(){
 
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 var randomPng2 = "images/" + "dice" + randomNumber2 + ".png";
 
@@ -39,13 +39,15 @@ image2.setAttribute("src", randomPng2);
 
  
 function r3() {
+    console.log(randomNumber1);
+    console.log(randomNumber2);
 
 if( randomNumber1 > randomNumber2){
-    document.querySelector("h1").innerHTML = p1 + " won";
+    document.querySelector("h1").innerHTML = "player 1 " + " ( " + p1 + " ) " + " won";
 }
 
 else if( randomNumber1 < randomNumber2){
-    document.querySelector("h1").innerHTML =  p2 + " won";
+    document.querySelector("h1").innerHTML =  "player 1 " + " ("+  p2 + " ) " + " won";
 
 }
 else{ 
@@ -53,4 +55,9 @@ else{
 }
 
 }
+
+
+
+
+
 
